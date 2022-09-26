@@ -60,7 +60,7 @@ function run(command, args, opts = {}) {
 ////////////////////////////////////////////////////////////////////////
 
 function getReleaseTags() {
-    let tagsFile = path.join(emsdkBase(), 'emscripten-releases-tags.txt');
+    let tagsFile = path.join(emsdkBase(), 'emscripten-releases-tags.json');
     let rawData = fs.readFileSync(tagsFile);
     return JSON.parse(rawData);
 }
